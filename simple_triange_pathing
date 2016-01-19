@@ -1,3 +1,5 @@
+# goal is to create an optimal pathing from the top to bottom of triangle for maximum sum.
+
 # first element in triangle array is [75, 0]; easier to start with it out.
 triangle =
 [
@@ -24,8 +26,6 @@ triangle.each_with_index do |level, idx|
       last_pos = path.last[1]
       if last_pos == 0
          path << [value, pos, idx] if value == [level[0], level[1]].max
-      elsif last_pos == 1
-         path << [value, pos, idx] if value == [level[0], level[1], level[2]].max
       else
          path << [value, pos, idx] if value == [level[last_pos - 1], level[last_pos], level[last_pos + 1]].max
       end
@@ -34,4 +34,4 @@ end
 
 p path
 
-# my path (seemingly) randomly sometimes iterates through the same level/row of the triangle twice before moving down. why!?
+# my path iterates twice through the same level when the previous level's position is 0.
