@@ -1,5 +1,6 @@
 # theoretical odds of selecting same number in Odds-On.
 
+# code for determining outcomes of 100 tries each:
 (2..25).each do |num|
    count = 0
    100.times do
@@ -10,7 +11,7 @@
    puts "#{count}% for #{num}"
 end
  
-# starts to seem more legit after 1_000_000 tries each  
+# percentages start to seem more legit/as expected after 1_000_000 tries each  
 # 50% for 2                                                                                                                
 # 33% for 3                                                                                                                
 # 25% for 4                                                                                                                
