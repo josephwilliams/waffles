@@ -13,7 +13,7 @@ end
 # starts to seem more legit after 1_000_000 tries each  
 # 50% for 2                                                                                                                
 # 33% for 3                                                                                                                
-# 24% for 4                                                                                                                
+# 25% for 4                                                                                                                
 # 20% for 5                                                                                                                
 # 16% for 6                                                                                                                
 # 14% for 7                                                                                                                
