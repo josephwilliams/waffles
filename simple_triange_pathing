@@ -19,6 +19,7 @@ triangle =
 [4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23]]
 
 # level [0] starts at top of pyramid
+# path << [[triangle.first], 0 #index]
 path = [[75, 0]]
 
 triangle.each_with_index do |level, idx|
